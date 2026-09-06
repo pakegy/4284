@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pakegy.github.io/4284/sitemap.xml
+
