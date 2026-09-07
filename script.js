@@ -142,7 +142,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const encoded = arrayBufferToBase64(combined);
 
-            const code = "4284-" + encoded;
+const code = "4284-" + encoded.match(/.{1,4}/g).join("-");
 
             result.textContent = code;
 
@@ -183,7 +183,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             result.textContent = "جاري كشف الرسالة...";
 
-            const encoded = code.substring(5);
+const encoded = code.substring(5).replace(/-/g, "");
 
             const combined = base64ToUint8Array(encoded);
 
