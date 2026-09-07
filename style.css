@@ -1,0 +1,146 @@
+/* 4284 - Main Style */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #0d0d0f;
+    color: #f3efe7;
+    font-family: Georgia, serif;
+}
+
+.container {
+    width: min(900px, 92%);
+    margin: auto;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.code {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: 6px;
+    opacity: 0.4;
+    margin-bottom: 30px;
+}
+
+.verse {
+    font-size: clamp(26px, 6vw, 55px);
+    line-height: 1.9;
+}
+
+.author {
+    margin-top: 25px;
+    opacity: 0.6;
+    font-size: 18px;
+}
+
+/* رسالة الترحيب */
+
+.intro {
+    margin-top: 60px;
+}
+
+.intro h1 {
+    font-size: clamp(28px, 7vw, 48px);
+    margin-bottom: 15px;
+}
+
+.intro p {
+    font-size: 18px;
+    opacity: 0.7;
+    line-height: 1.8;
+}
+
+
+.actions button:hover {
+    background: #f3efe7;
+    color: #0d0d0f;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 35px 15px;
+    }
+
+    .verse {
+        line-height: 1.8;
+    }
+}
+/* صندوق الرسائل */
+
+.message-box {
+    max-width: 650px;
+    margin: 40px auto 0;
+    text-align: center;
+}
+
+.message-box textarea,
+.message-box input {
+    width: 100%;
+    background: #151519;
+    color: #f3efe7;
+    border: 1px solid rgba(243, 239, 231, 0.18);
+    border-radius: 10px;
+    padding: 16px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    outline: none;
+    transition: 0.25s ease;
+}
+
+.message-box textarea {
+    min-height: 150px;
+    resize: vertical;
+    line-height: 1.7;
+}
+
+.message-box input {
+    height: 52px;
+}
+
+.message-box textarea:focus,
+.message-box input:focus {
+    border-color: rgba(243, 239, 231, 0.5);
+}
+
+.message-box button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 15px;
+    border: 1px solid rgba(243, 239, 231, 0.25);
+    border-radius: 10px;
+    background: #f3efe7;
+    color: #0d0d0f;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.message-box button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.divider {
+    margin: 25px 0;
+    opacity: 0.45;
+    font-family: Arial, sans-serif;
+}
+
+.result {
+    margin-top: 25px;
+    padding: 18px;
+    min-height: 50px;
+    border-radius: 10px;
+    background: #151519;
+    border: 1px solid rgba(243, 239, 231, 0.12);
+    line-height: 1.8;
+    word-break: break-word;
+    font-family: Arial, sans-serif;
+}
